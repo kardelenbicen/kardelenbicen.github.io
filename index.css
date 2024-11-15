@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #E5D9F2; 
+    --second-bg-color:#F5EFFF;
+    --text-color:#fff;
+    --main-color:#9CB4CC;
+}
+
+html{
+    font-size:100%;
+    
+}
+
+body {
+background-color: var(--bg-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#080800;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 100%;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a:active {
+    color: var(--main-color);
+    border-bottom: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color:var(--main-color);
+    display: none;
+}
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h2{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.home-img img {
+    width: 32vw;
+    position: relative;
+    top:2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color), 0 0  50px var(--main-color),0 0 100px var(--main-color);
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    font-size: 2.5rem;
+}
+
+.contact form{
+    display: flex;
+    text-align: center;
+}
+
+.contact form ,box {
+    justify-content: left;
+}
+
+.contact form .box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    color: var(black);
+    margin: 1rem ;
+}
+
+ /* Responsive */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 5%;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .home img {
+        width: 200px;
+        margin-top: 1rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 3%;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.2rem;
+    }
+
+    .home img {
+        width: 150px;
+    }
+}

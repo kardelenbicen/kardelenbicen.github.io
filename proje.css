@@ -1,0 +1,144 @@
+body {
+    background-color:var(--second-bg-color);
+}
+
+.heading {
+    font-size: 4rem;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#080808 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+:root{
+    --bg-color: #E5D9F2; 
+    --second-bg-color:#F5EFFF;
+    --text-color:#fff;
+    --main-color:#9CB4CC;
+}
+
+body {
+    background-color:var(--second-bg-color);
+    }
+
+.logo {
+
+    color: var(--text-color);
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+
+}
+
+nav a:hover,
+nav a:active {
+    color: var(--main-color);
+    border-bottom: var(--main-color);
+}
+
+.project {
+    width: 40%;
+}
+
+.project-img img {
+    width: 100%;
+}
+
+.project-img img:hover {
+    transform: scale(1.1);
+}
+
+.project-content h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+/* responsive*/
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 5%;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .home img {
+        width: 200px;
+        margin-top: 1rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 3%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.2rem;
+    }
+
+    .home img {
+        width: 150px;
+    }
+}
+
+

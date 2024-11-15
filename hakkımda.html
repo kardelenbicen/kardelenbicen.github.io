@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda</title>
+     <link rel="stylesheet" href="hakkımda.css">
+     <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            KARDELEN BİÇEN </a>
+        <nav>
+            <a href="index.html" class="active">Ana Sayfa</a>
+            <a href="hakkımda.html" target="_blank">Hakkımda</a>
+            <a href="projelerim.html" target="_blank">Projelerim</a>
+        </nav>
+    </header>
+
+    <section class="Hakkımda" id="Hakkımda">
+        <h2 class="heading">Hakkımda</h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content"></div>
+                <h3>Kişisel Bilgiler</h3>
+                <p>   Ben Kardelen Biçen. 3 Ocak 2003 İstanbul doğumluyum.Aslen Yozgatlıyım. İlkokul ve ortaokulu Sancaktepe Cengiz Topel ilk ve ortaokulu'nda okudum.
+                    <span class="hidden" id="kisisel">
+                         Liseyi İstanbul'da, Sancaktepe Anadolu Lisesi'nde okudum. Sonrasında YKS sınavına girip ilk yılımda Recep Tayyip Erdoğan Üniversitesi'nde Bilgisayar Mühendisliği bölümünü kazandım. Burda 1 sene İngilizce hazırlık eğitimi alıp B1+ seviyesinde tamamladım. 2021 yılından beri okul dolayısıyla Rize'de ikamet etmekteyim. Öğrenciyim, çalışmıyorum. Kendime ait LinkedIn ve GitHub hesaplarım Anasayfa kısmında yer almaktadır.
+                    </span>
+                </p>
+                <button onclick="toggleContent('kisisel', this)">Daha Fazla Göster</button>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content"></div>
+                <h3>Hobiler</h3>
+                <p>
+                    Hobilerim arasında arkadaşlarımla vakit geçirmek, spor yapmak, 
+                    <span class="hidden" id="hobi">
+                        yüzmek, kendimi alanımla ilgili ilerletmek, ailemle vakit geçirmek, yeni maceralar edinmek. Hayalim bir gün yamaç paraşütü yapmak. Bu bana çok tehlikeli geliyor ancak o anki heyecanı merak ediyorum.
+                    </span>
+                </p>
+                <button onclick="toggleContent('hobi', this)">Daha Fazla Göster</button>
+            </div>
+        </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content"></div>
+                <h3>İletişim</h3>
+                <p> Telefon numaram: 0 (531) 980 26 87        Mail: kardelen.bicen.tr@gmail.com     Adreslerinden iletişime geçebilirsiniz.
+                </p>
+            </div>
+            <div class="home-img">
+                <img src="img/photo.jpg" alt="Logo" />
+
+            </div>
+        </div>
+    </section>
+    <script src="hakkımda.js"></script>
+</body>
+</html>

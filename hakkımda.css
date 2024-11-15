@@ -1,0 +1,163 @@
+.home-img {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+}
+.home-img img {
+    width: 25vw;
+    border-radius: 50%;
+}
+.heading{
+    font-size: 8rem;
+    text-align: left;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#080800;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 100%;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+.logo:hover{
+    transform:scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+}
+nav a:hover,
+nav a:active {
+    color: var(--main-color);
+    border-bottom: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color:var(--main-color);
+    display: none;
+}
+
+:root{
+    --bg-color: #E5D9F2; 
+    --second-bg-color:#F5EFFF;
+    --text-color:#fff;
+    --main-color:#9CB4CC;
+}
+body {
+    background-color:var(--second-bg-color);
+    }
+.Hakkımda {
+padding: 100px 15px;
+}
+.timeline-items {
+max-width: 1200px;
+display: flex;
+flex-wrap: wrap;
+}
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left:0%;
+}
+.timeline-item {
+margin-bottom: 40px;
+position: relative;
+}
+
+.timeline-dot {
+height: 20px;
+width: 20px;
+background-color: var(--main-color);
+}
+
+
+/*responsive*/
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .heading {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .home-img {
+        position: static;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 35vw;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 3%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .home-img img {
+        width: 50vw;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .timeline-items {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+    }
+
+    .timeline-content {
+        text-align: center;
+    }
+}
